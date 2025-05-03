@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Anime Simulator Calculator</title>
+</head>
+<body>
+  <section class="main-container">
+    <section class="left-collum">
+      <section class="area-time-status">
+        <h1 class="left-title title">Time settings</h1>
+        <section>
+          <h2 class="subtitle">Select Time Period</h2>
+          <select class="select-menu" id="select-time-status">
+            <option value="m">Minute</option>
+            <option value="h">Hour</option>
+            <option value="d">Day</option>
+            <option value="w">Week</option>
+          </select>
+          <h2 class="subtitle">Enter Time Amount (Optional)</h2>
+          <textarea class="input-box" id="status-time" placeholder="Enter time amount (e.g., 30)"></textarea>
+          <button class="button-form" id="calculate-time">Calculate</button>
+          <h2 class="subtitle" id="stat-time-gains">Total Stats Gained: 0</h2>
+        </section>
+      </section>
+
+      <section class="area-time-tick">
+        <h1 class="left-title title">Ticks Quest</h1>
+        <section>
+          <h2 class="subtitle left-subtitle">Select Ticks Type</h2>
+          <select class="select-menu" id="select-tick-status">
+            <option value="strength">Strength</option>
+            <option value="defense">Defense</option>
+            <option value="energy">Energy</option>
+            <option value="sword">Sword</option>
+          </select>
+          <h2 class="subtitle left-subtitle">Current Ticks</h2>
+          <textarea class="input-box" id="current-ticks" placeholder="Enter current ticks (e.g., 1000)"></textarea>
+          <h2 class="subtitle left-subtitle">Ticks Needed</h2>
+          <textarea class="input-box" id="needed-ticks" placeholder="Enter number of ticks (e.g., 5000)"></textarea>
+          <button class="button-form" id="calculate-tick-time">Calculate time needed</button>
+          <h2 class="subtitle left-subtitle" id="ticks-result">Time Needed for Ticks: 0</h2>
+        </section>
+      </section>
+    </section>
+
+    <section class="mid-collum">
+      <section class="area-status">
+        <h1 class="title mid-title">Status Calculator</h1>
+        <section>
+          <h1 class="subtitle mid-subtitle">Status type</h1>
+          <select class="select-menu" id="select-status">
+            <option value="strength">Strength</option>
+            <option value="defense">Defense</option>
+            <option value="energy">Energy</option>
+            <option value="sword">Sword</option>
+          </select>
+          <h2 class="subtitle mid-subtitle">Status per Tick</h2>
+          <textarea class="input-box mid-box" id="stat-tick" placeholder="Enter status gain per tick"></textarea>
+          <h2 class="subtitle mid-subtitle">Champion tick status</h2>
+          <textarea class="input-box mid-box" id="champ-tick" placeholder="Enter champion tick status"></textarea>
+          <h2 class="subtitle">Current status</h2>
+          <textarea class="input-box mid-box" id="current-stat" placeholder="Enter current status"></textarea>
+          <h2 class="subtitle mid-subtitle">Wanted status</h2>
+          <textarea class="input-box mid-box" id="wanted-stat" placeholder="Enter desired status"></textarea>
+          <button class="button-form" id="calculate-stat">Calculate</button>
+          <h2 class="subtitle mid-subtitle" id="stat-gains">Stat Gain per Minute: 0</h2>
+          <h2 class="subtitle mid-subtitle" id="remaining-time">Time to Reach Desired Stats:</h2>
+        </section>
+      </section>
+    </section>
+    <section class="right-collum">
+        <section class="area-coin">
+            <h1 class="title">Coins Calculator</h1>
+            <section>
+                <h2 class="subtitle">Rank</h2>
+                <select class="select-menu" id="select-rank"></select>
+                <section class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id='hasX2' name="x2"><label for="x2">x2 Coins Gamepass</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hasGolden" name="golden"><label for="golden" class="subtitle">Golden</label>
+                    </div>
+                </section>
+                <h2 class="subtitle">Current coins</h2>
+                <textarea class="input-box" id="current-coins" placeholder="Enter current coins"></textarea>
+                <h2 class="subtitle">Needed coins</h2>
+                <textarea class="input-box" id="needed-coins" placeholder="Enter needed coins"></textarea>
+                <h2 class="subtitle">Select time period</h2>
+                <select class="select-menu" id="select-time-coins">
+                    <option value="m">Minute</option>
+                    <option value="h">Hour</option>
+                    <option value="d">Day</option>
+                    <option value="w">Week</option>
+                </select>
+                <h2 class="subtitle">Enter Time Amount (optional)</h2>
+                <textarea class="input-box" id="coins-time" placeholder="Enter amount (e.g., 1)"></textarea>
+                <button class="button-form" id="calculate-coins">Calculate</button>
+                <h2 class="subtitle right-subtitle" id="coins-gains-result">Coins Gained per Minute: 0</h2>
+            </section>
+        </section>
+    </section>
+  </section>
+  <section class="credits"> 
+    <h5>© FellowAS and Shadoso, all rights reserved</h5>
+  </section>
+
+  <script src="utilities.js"></script>
+  <script type="module" src="listeners.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>

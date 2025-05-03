@@ -1,0 +1,22 @@
+{
+    "Rookie":  5,
+    "Ninja":  10,
+    "Pirate":  25,
+    "Ghoul":  50,
+    "Hero":  100,
+    "Reaper":  250,
+    "Warrior":  500,
+    "Sin":  1000,
+    "Mage":  5000,
+    "Demon":  10000,
+    "Emperor":  50000,
+    "Elder":  100000,
+    "Overlord":  500000,
+    "Leader":  1000000,
+    "Deity":  5000000,
+    "Sage":  10000000,
+    "Mask":  50000000,
+    "Shinigami":  100000000,
+    "Hashira":  500000000,
+    "Destroyer":  1000000000
+}
