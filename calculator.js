@@ -5,7 +5,7 @@ const timeUnitsInMinutes = {
     m: 1            // minuto
 };
 
-function calculateTimeGains() {
+function calculate_time() {
     const selectedUnit = document.getElementById('select-time-status').value;
     const minutesPerUnit = timeUnitsInMinutes[selectedUnit];
 
